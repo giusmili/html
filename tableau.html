@@ -1,0 +1,55 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<style type="text/css">
+		body{
+			font: 16px sans-serif;
+		}
+		h1,h2,h3{
+			text-align: center;
+		}
+	</style>
+</head> 
+<body>
+	<h1>Les tabelaux</h1>
+		<ul></ul>
+		<script>
+			//nox langages
+			let lang=[
+						"javascript",
+						"Html",
+						"Css",
+						"Ajax"
+					]
+
+			var tabelaux=Array();//ancienne notation
+			
+			
+			let header=document.getElementsByTagName('h1');
+			
+			let cible=document.querySelector('ul');
+			let ref=String('');//variable de référence
+					for(let i=0; i<lang.length; i++){
+						console.log(lang[i]);
+					ref+="<li>"+lang[i]+"</li>";
+
+					}
+			
+					cible.innerHTML=ref;
+					//test suivants
+					console.log(lang.length);
+					console.log(lang[0]);
+							
+					console.log(cible.childNodes.length);
+					console.log(cible.tagName+" "+cible.childNodes);
+					
+					console.log(header[0].childNodes[0].nodeValue.length);
+
+				
+				
+				
+		</script>
+</body>
+</html>

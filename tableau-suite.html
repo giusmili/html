@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<style type="text/css">
+		body{
+			font: 16px sans-serif;
+		}
+		h1,h2,h3{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Les tabelaux</h1>
+		<ul></ul>
+		<script>
+			//les élèves
+			var list=document.getElementsByTagName('ul')[0];
+			var eleves=[
+						{
+						nom:'Marc',
+						moyenne:5
+						},
+						{
+							nom:'Joe',
+							moyenne:20
+						},
+						{
+							nom:'Caroline',
+							moyenne:3.5
+
+						}
+					];
+			for(let i=0; i<eleves.length; i++){
+			console.log(eleves[i].nom+' '+eleves[i].moyenne);
+			list.innerHTML+='<li>'+eleves[i].nom+' : '+eleves[i].moyenne+'</li>';
+		}
+		
+		for(var key in eleves)
+					{
+					  var value = eleves[key];
+					
+
+					  console.log(value);
+
+					 }
+
+		</script>
+</body>
+</html>
